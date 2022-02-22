@@ -1,0 +1,19 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+        maven { url "https://rdmaven.dahuatech.com:8081/nexus/content/groups/AndroidGroup/"}
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven { url "https://rdmaven.dahuatech.com:8081/nexus/content/groups/AndroidGroup/"}
+
+    }
+}
+rootProject.name = "LastTest"
+include ':app', ':inetsdk'
